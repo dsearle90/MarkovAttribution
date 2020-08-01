@@ -48,7 +48,7 @@ Get started with the following code.
 
    import pandas as pd
 
-   import MarkovAttribution
+   from markovattribution import MarkovAttribution
 
    df = pd.read_csv('*PATH TO SAMPLE*')
 

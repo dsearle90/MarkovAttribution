@@ -29,7 +29,7 @@ Get started with the following code.
 
 ```py
 import pandas as pd
-import MarkovAttribution
+from markovattribution import MarkovAttribution
 
 df = pd.read_csv('*PATH TO SAMPLE*')
 attribution = MarkovAttribution()
