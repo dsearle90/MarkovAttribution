@@ -8,7 +8,7 @@ setup(
   author = 'David Searle',
   author_email = 'connect@deepleaf.com.au',
   url = 'https://github.com/dsearle90/MarkovAttribution',
-  download_url = 'https://github.com/dsearle90/MarkovAttribution/archive/v_02.tar.gz',
+  download_url = 'https://github.com/dsearle90/MarkovAttribution/archive/v_03.tar.gz',
   keywords = ['MARKOV',
               'ATTRIBUTION',
               'CHANNELATTRIBUTION',
