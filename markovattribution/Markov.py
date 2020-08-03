@@ -17,7 +17,6 @@ class MarkovAttribution():
         """Initialize the attribution module.
         
         Args:
-            df (DataFrame): Pandas DataFrame containing the user journeys.
             path_prefix (str): Prefix for all 'touchpoint' columns.
             conversion_col (str): Column containing the conversion status
             removal_calc_mode (str): Valid options ('synthesize','approximate')
@@ -56,6 +55,7 @@ class MarkovAttribution():
         """Runs the markov modelling attribution process.
         
         Args:
+            df (DataFrame): Pandas DataFrame containing the user journeys.
         
         Returns:
             attribution (object): Object containing - Touchpoint Totals
@@ -93,7 +93,8 @@ class MarkovAttribution():
             Calculate how often a state is contained in a converting path
         
         Args:
-        
+            paths (list): List of strings containing the user pathways
+            
         Returns:
             transition (dict): Dict contains - Transition States
                                              - Transition Conversion Counts
@@ -115,7 +116,9 @@ class MarkovAttribution():
             long format
         
         Args:
-        
+            tran_states (dict): Dictionary containing transition states
+            conv_counts (dict): Dictionary containing touchpoint conv counts
+            
         Returns:
             tt (DataFrame): From - 'From' Channel
                             To - 'To' Channel
